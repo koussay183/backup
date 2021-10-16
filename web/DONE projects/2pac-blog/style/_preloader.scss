@@ -1,0 +1,22 @@
+.preloader{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    img{
+        height: 35%;
+        width: auto;
+        transition: transform 1s ease;
+        animation: scaleit  2.4s ease forwards ;
+    }
+}
+
+// animation 
+@keyframes scaleit{
+    0%{opacity: 1;}
+    50%{transform: scale(1.5);opacity: 1;}
+    100%{opacity: 0;}
+}

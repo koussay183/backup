@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon"  href="img/iconT.gif">
+        <link rel="manifest" href="img/site.webmanifest">
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/color.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="DMK , DMK club ,Club DMK , siliana , siliana club">
+        <meta name="description" content="DMK club siliana Home">
+        <meta name="author" content="Koussay Jebali">
+        <script src="js/object_or.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>DMK</title>
+    </head>
+    <body id="body">
+        <div class="preloder" id="preloder">
+            <img src="img/loader-img.gif" alt="load">
+        </div>
+        <div class="big-holder" id="big-holder">
+            <header id="nav">
+                <div class="logo-holder"><img src="img/logo.gif" alt="logo"></div>
+                <div class="menu-holder">
+                    <button id="menu-open"><img src="img/menu-open.png" alt="open-menu"></button>
+                    
+                        <ul class="menu-one">
+                            <li style="display: none;"><a href="#team-start" id="close">Team</a></li>
+                            <li><a href="committees.html">committees</a></li> 
+                            <li ><a href="activities.html" id="close3">Activities</a></li>
+                            <li style="display: none;"><a href="about.html" id="close2">about DMK</a></li>
+                            <li><a href="contact.html" id="close1">Contact us</a></li>
+                            <li ><a href="goals.html" id="close4">Goals</a></li>
+                        </ul>
+                    
+                </div>
+            </header>
+            <div class="content-holder">
+                <!-- start  -->
+                <!-- strat club image holder  -->
+                <div class="club-img-holder">
+                    <img src="img/club-mbrs.jpeg" alt="club-emmbers" id="club-img">
+                    <div class="back-next-holder" style="display: none;">
+                        <img src="img/back-icon.png" alt="back" id="back">
+                        <img src="img/next-icon.png" alt="next" id="next">
+                    </div>
+                    <img src="img/team-work.png" alt="club-emmbers" id="nd-club-img" class="nd-pic">
+                </div>
+                <!-- infos about dmk -->
+                <div class="club-desc" id="club-desc">
+                    <h1>what is dmk !</h1>
+                    <p>A “Digital Marketing Club” is an initiative of Social Media Club Tunisia to promote DMK within universities through a series of meetings and workshop</p>
+                </div>
+                 <!-- a title and image -->
+                <div class="digital-title-holder">
+                    <p>“In the time it took you to read this sentence 20m emails have been sent.” – John Watton</p>
+                    <span id="a1"></span>
+                </div>
+                <div class="club-desc" id="goals">
+                    <h1 style="text-align: center;">Goals</h1>
+                    <p>Our goal is to reduce the gap between academic institutions and the professional world by providing a platform where students will have the chance to experience DMK</p>
+                    <div id="clip-like"></div>
+                </div>
+                <!-- a title holder start -->
+                <div class="title-holder" id="team-start"><h1>our team <span>i call it a familly</span></h1></div>
+                <!-- end  -->
+            </div>
+        </div>
+        <div class="menu-bar" id="menu-bar">
+            <div class="menu-close-holder"><img src="img/menu-close.png" alt="close" id="menu-close"></div>
+            <div class="opts-holder" >
+                <ul>
+                    <li style="display: none;"><a href="#team-start" id="close">Team</a></li>
+                    <li ><a href="goals.html" id="close4">Goals</a></li>
+                    <li style="display:none;"><a href="about.html" id="close2">about DMK</a></li>
+                    <li ><a href="activities.html" id="close3">Activities</a></li>
+                    <li><a href="contact.html" id="close1">Contact us</a></li>
+                    <li><a href="committees.html">committees</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- here the injection of the forms of beraux members -->
+         <div id="forms-holder"></div>
+         <script>
+            memberForm('Rayen elHeni, president of DMK siliana club.  I\'m 18 years old and I\'m  from Siliana , I start working with this club to have more experience for my team','not','img/presedent.jpeg','president');
+            memberForm('My name is Ikram Fotouhi. I\'m 15 years old. I study first secondary school on March 2, 1934. I have a small experience in clubs and I love the field of marketing, especially digital marketing.I\'m a vice president DMK club Siliana.','reversed','img/vice.jpg',' vice president');
+            memberForm('Im oumaima guesmi secretary in DMK club siliana I\'m 16years old I started working in this club to develop my experience and prove my self','not','img/secretaire.jpg','secretaire');
+            // memberForm('I m aziz waari chef marketing in DMK club siliana 18 years old and i started working in this club to donate a new ideas also to make new friends,to have a new experience and to learn a new skills in social media','reversed','img/c-marketing.jpeg','c marketing');
+            memberForm("I\'m zin eddine ammi chef event in DMK club siliana i\'m 18 years old. and because i am a teenager i am trying to make some new friendships and learn how to be responsable that\'s why i joined this club",'not','img/c-event.jpeg','c event');
+            memberForm('I introduce myself, Hosni Rajab, 17 years old, studying in the third year in technical sciences. i\'m chef c.media in DMK club, I entered this club because I like his goal and work like family','reversed','img/c-media.jpg','c media');
+            // memberForm('rayen is coming soon','not','img/c-protocol.jpg','c protocol');
+            memberForm('Im asma abed knowledge manager in DMK siliana club im 17years old I started working in this club to make an experience and to be sociable','notreversed','img/Treasurer-of-the-money.jpg','knowledge manager');
+            memberForm('I present myself Ghassen guesmi 18 years . RH. I started working with this club because I liked its work and its goals also to develop my experience','reversed','img/RH.jpeg','RH');
+            memberForm('Ahed Attyaoui I supervise the filed of arts at this club. I\'m 16 yo , i started working in this club because i have confidence in my abilities to improve my city also to prove myself and to progress','notreversed','img/vp-art.jpg','vp art');
+            memberForm('I\'m Ranim Jouini I\'m 16 years old and I\'m a Treasurer in DMK club siliana..I started working in this club to make new friends, to Take on a new experience in my life and to learn how to be more socialble','reversed','img/as-sec.jpg','Treasurer');
+            memberForm('I\'m koussay jebali , 17y old , chef development in DMK club and I\'m the developer of this website , i start working in this club to upgrade my skills','notreversed','img/members/koussay-jebali.jpeg','C Development');
+            memberForm('To start with,my name is tasnim sghairi, I\'m 17yo. I\'m Assistant Secretary in dmk siliana club. I\'ve chosen this club because I wanna improve my skills, know new people and try new experiences','reversed','img/Assistant-Secretary.jpeg','Assistant Secretary')
+        </script> 
+        <div class="members-start" id="members-start">
+            <h2>Those were Our Chiefs</h2>
+            <h4>Now Our Legendary Members</h4>
+        </div>
+        <script>
+            // memberForm('Nourat Nada ajmi , member of DMK siliana club. I\'m 15 yo and  I live in siliana , And I started working with this club  because I liked his goal','notreversed','img/members/lata.jpg','Nourat Nada ajmi');
+            // memberForm('I\'m soulaima mejri membre of DMK siliana club I\'m 16 years old and i live in siliana  i started working on this club to develop my culture','notreversed','img/members/soulaima-mejri.jpg','soulaima mejri');
+            // memberForm('Im omar kadeda im 18 years old im from siliena and im studying technical sciences at monji slim school i joined DMK Club   to prove myself in the community and im now a member of this club','reversed','img/members/omar-kadeda.jpg','omar kadeda');
+            memberForm('my name is khalil I am 16 years old , I am always looking for new challenges and the opportunity to integrate into the associative life by integrating into clubs,I\'m a developer','reversed','img/members/khalil-othmani.jpg','khalil othmani','body');
+            memberForm('I\'m ale soumri i\'m 15 yo and i\'m a member in DMK siliana club... I got into this club to improve my skills ','notreversed','img/members/Soumri-Ale.jpg','Soumri Ale','body');
+        </script>
+        <div class="read-more"><a href="committees.html">read more</a></div>
+        <!-- contact us is a footer -->
+        <div class="contact">
+            <span>Dmkclubsiliana@gmail.com</span>
+            <span>+216 93 840 268</span>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/committees.css">
+        <link rel="stylesheet" type="text/css" href="style/color.css">
+        <script src="js/comite_obj.js"></script>
+        <title>committees</title>
+    </head>
+    <body>
+        <!-- link take you back to home page -->
+        <header>
+            <div id="back-s-holder" onclick="window.location = 'index.html';">
+                <span id="back-1"></span>
+                <span id="back-2"></span>
+                <span id="back-3"></span>
+            </div>
+        </header>
+        <div class="title-holder">
+            <div class="h1-holder">
+                <h2>committees that we have</h2>
+            </div>
+        </div>
+        <div class="card_box_holder" id="card_box_holder">
+
+        </div>
+        <script>
+            create_card('development','C Development','img/members/koussay-jebali.jpeg','koussay jebali','members_pages/comite_dev.html');
+            create_card('event','C Event','img/c-event.jpeg','zizo','members_pages/comite_event.html');
+            create_card('marketing','C Mareting','img/c-marketing.jpeg','aziz waari','members_pages/comite_marketing.html');
+            create_card('media','C Media','img/c-media.jpg','hosni rajab','members_pages/comite_media.html');
+            create_card('art','C Art','img/vp-art.jpg','ahed attaoui','members_pages/comite_art.html');
+        </script>
+    </body>
+    
+</html>

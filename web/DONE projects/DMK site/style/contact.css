@@ -1,0 +1,210 @@
+/* this for normal texts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* this for headers */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 , h2 , h3 , h4 {
+    font-family: 'Bebas Neue', cursive;
+}
+/* back symbole */
+    /* strat */
+#back-s-holder {
+    position: fixed;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: 1.5em .5em;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+    z-index: 99;
+}
+#back-1 , #back-2 , #back-3 {
+    display: block;
+    margin: 1px;
+    width: 50px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius:50px ;
+    transform: translate(1.3px);
+}
+#back-1 , #back-3 {
+    width: 25px;
+} 
+#back-1 {
+    transform: rotate(-45deg);
+}
+#back-3 {
+    transform: rotate(45deg);
+}
+    /* end */
+/* footer */
+.contact {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        background: var(--main-color);
+        color: white;
+        margin-top: 1em;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em;
+        padding: 1em;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+}
+/* social media holder  */
+    /* start */
+.social-holder{
+    padding: 5em .5em 0em;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+    /* icons default style */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    max-width: 400px;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1.2em 2em;
+    transform: skew(25deg) scale(1.2);
+    box-shadow: -10px 10px 1px 1px rgb(207, 207, 207);
+    transition: .2s ease-in-out;
+}
+
+.fa:hover{
+    box-shadow: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }
+
+    /* end */
+/* 546 respon */
+@media (min-width:540px){
+    .social-holder{
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        padding: 0em 1em 0em;
+    }
+}

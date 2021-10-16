@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Home</title>
+        <link rel='stylesheet' type='text/css' href='style\style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="js\main.js"></script>
+    </head>
+    <body>
+        <div class="holder" id="holder">
+            <!-- menu bar  -->
+            <div class="menu-bar">
+                <span id="plus-1" onclick="show()"></span>
+                <span id="plus-2" onclick="show()"></span>
+            </div>
+            <!-- tasks holder -->
+            <div class="task-holder" id="task-holder"></div>
+        </div>
+        <!-- the adding box  -->
+        <div class="adding-box" id="adding-box">
+            <div class="hide-holder">
+                <span id="hide-1" onclick="hide()"></span>
+                <span id="hide-2" onclick="hide()"></span>
+            </div>
+            <div class="text-input-holder">
+                <h1>Add Your Task</h1>
+                <input type="text" placeholder="type here" name="task" id="text-input">
+                <button id="add-btn" onclick="add()">Add</button>
+            </div>
+        </div>
+    </body>
+    
+</html>

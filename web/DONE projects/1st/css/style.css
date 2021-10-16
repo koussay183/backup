@@ -1,0 +1,186 @@
+﻿body {
+	background-color: #1e265c;
+	padding:0;
+	margin: 0;
+	font-family: "Sofia";
+}
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+display: none;
+}
+
+/*::selection {
+  color: red;
+  background: yellow;
+}*/
+
+.welcom-div {
+	background-color:white;
+	animation-name: name-div;
+	animation-duration: 0.7s;
+	width:90%;
+	color:#1e265c;
+	text-align:center;
+	font-size:250%;
+	border-radius: 50px;
+	margin:-7px auto;
+}
+@keyframes name-div {
+	from {width: 40%;background-color:#1e265c}
+	to {}
+}
+.des {
+	height: 500px;
+	width: 99%;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 50px;
+	animation: des-anim 1s ease;
+	background-color: white;
+	background-image: url("../img/des-img2.gif");
+	background-repeat: no-repeat;
+	background-attachment: cover;
+	background-size: 680px 428px;
+	background-position: 0% 50%;
+}
+@keyframes des-anim {
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.mytext {
+	width: 40%;
+	position: relative;
+	top:90px;
+	right: 80px;
+	float: right;
+	margin: auto;
+}
+.mytext1 {
+	position: relative;
+	border-radius: 50px;
+	font-size: 200%;
+	border: 3px #1e265c solid;
+	background-color:white;
+	color: #1e265c;
+	padding: 30px;
+	transition: background-color,color 0.7s;
+}
+.mytext1:hover{
+	background-color: #1e265c;
+	color: white;
+}
+
+.more-info-div{
+	width: 90%;
+	height: 820px;
+	margin:30px auto;
+	border-radius: 50px;
+	animation: more-anim 1.5s;
+	background-color: white;
+	overflow: hidden;
+}
+@keyframes more-anim {
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.more-info-big-text-div{
+	width: 50%;
+	height:30px;
+	margin:-11px auto;
+	background-color:white;
+	position: relative fixed;
+}
+.more-info-big-text{
+	background-color: white;
+	border: 2px #1e265c solid;
+	text-align: center;
+	color:#1e265c;
+	border-radius: 50px;
+	padding: 5px;
+	font-size: 200%;
+	transition: background-color 0.3s;
+}
+.more-info-big-text:hover{
+	background-color:#1e265c;
+	color:white;
+	cursor: pointer;
+}
+.info-cart {
+	position: relative;
+	width: 70%;
+	height: 75%;
+	margin: auto;
+	background-color: #1e265c;
+	border-radius: 50px;
+	transform: translate(0px,90px);
+}
+.info-cart > :first-child {
+	position: absolute;
+	width: 100%;
+	height:100px;
+	background-color: #0c1c34;
+	border-radius:50px 50px 0px 0px;
+}
+.pic-holder {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	margin:20px auto;
+}
+.koussay-pic{
+	position: absolute;
+	display: ;
+	height: 160px;
+	width: 160px;
+	border: 3px solid white;
+	border-radius: 100px;
+}
+.infos-div-front {
+	overflow: scroll;
+	position: absolute;
+	width: 70%;
+	height: 55%;
+	margin: 200px auto;
+	background-color: white;
+	border-radius: 30px;
+	transform: translate(22%,2%);
+}
+.infos-div-front > ul {
+	position: relative;
+	margin:10px 0px;
+}
+.infos-div-front > ul > li {
+	font-size: 160%;
+	line-height: 2.5;
+}
+.social-media-holder {
+	position: relative;
+	height: 150px;
+	width: 70%;
+	margin: 100px auto;
+	margin-bottom: 25px;
+	overflow:scroll;
+	background-color: white;
+	border-radius: 50px;
+	animation: social-md-anime 2s;
+}
+@keyframes social-md-anime{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.Instagram {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transform: translate(0px,15px);
+}
+.facebook {
+	position: relative;
+	float: right;
+	width: 120px;
+	height: 120px;
+	transform: translate(0px,15px);
+}

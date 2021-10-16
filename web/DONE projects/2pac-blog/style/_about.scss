@@ -1,0 +1,19 @@
+.about{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 2em;
+    justify-content: center;
+    height: 100vh;
+    h1{
+        width: 100%;
+    }
+    p{
+        font-size: 1.1em;
+        max-width: 600px;
+        text-align: justify;
+        line-height: 2em;
+    }
+}

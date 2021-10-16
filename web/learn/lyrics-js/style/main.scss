@@ -1,0 +1,109 @@
+@import './pre';
+@import './colors';
+@import './search';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+}
+h1  h2  h3 {
+    font-weight: bolder;
+}
+//  you putted the preloader to display none btw XD
+.holder{
+    position: absolute;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    // nav bar and logo
+    nav{
+        position: relative;
+        width: 100%;
+        padding: .5rem 1rem;
+        h1{
+            color: $under-main-color;
+            font-size: 2.5rem;
+            text-transform: none;
+            span{
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border: 2px solid $under-main-color;
+                border-radius: 50%;
+                background: $main-color;
+                margin: 0 .4rem;
+            }
+        }
+    } 
+    // main section
+    main{
+        position: relative;
+        padding-top:1em;
+        // ruselt holder 
+        .rs-holder{
+            position: absolute;
+            width: 85%;
+            max-width: 600px;
+            margin: 3em auto;
+            min-height: 100%;
+        }
+    }
+}
+.rs-holder>ul{
+    list-style: none;
+    li{
+        padding: .7em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-size: 1.5em;
+            
+        }
+        button {
+            min-width: 80px;
+            max-width: 100px;
+            height: 34px;
+            margin-left: .3em;
+            outline: none;
+            background: #f1e5ce;
+            border: none;
+            border-radius: 50px;
+            font-size: inherit;
+            cursor: pointer;
+        }
+    }
+}
+.more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button{
+        min-width: 80px;
+        max-width: 100px;
+        height: 34px;
+        margin-left: .3em;
+        outline: none;
+        background: #f1e5ce;
+        border: none;
+        border-radius: 50px;
+        font-size: inherit;
+        cursor: pointer;
+    }
+    margin-bottom: 1em;
+}
+.before-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+}
+

@@ -1,0 +1,49 @@
+@import './colors';
+.nav-box-bar-holder{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 0 0 2em;
+    input{
+        outline: none;
+        width: 80%;
+        max-width: 600px;
+        height: 40px;
+        border: 2px solid $under-main-color;
+        border-radius: 50px;
+        font-size: 1.1em;
+        color: $under-main-color;
+        padding-left: 1em;
+        background: rgba(128, 128, 128, 0.144);
+    }
+    button {
+        outline: none;
+        background: transparent;
+        border: unset;
+        cursor: pointer;
+        transition: transform .2s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .material-icons{
+        color: $under-main-color;
+        font-size: 3em;
+        margin: 0 .2em;
+    }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $under-main-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    $under-main-color;
+   opacity:  .6;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    $under-main-color;
+   opacity:  .6;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    $under-main-color;
+}

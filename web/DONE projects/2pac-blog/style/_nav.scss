@@ -1,0 +1,13 @@
+nav {
+    position: absolute;
+    display: flex;
+    flex-flow: row ;
+    justify-content: start;
+    padding-top: .5em;
+    padding-left: 2em;
+    svg{
+        width: 150px;
+        height: 150px;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&display=swap');
+body {
+	background: #283747;
+	margin: 0;
+	padding: 0;
+}
+.holder {
+	position: absolute;
+	width: 60%;
+	height: 550px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: white;
+	border-radius: 5px;
+	min-width: 507px;
+	max-width: 1000px;
+	box-shadow: 0 0 27px 22px rgba(0, 0, 0, 0.3);
+}
+.desc {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 30%;
+	min-width: max-content;
+	background-image: linear-gradient(to bottom, #344857 ,#485d74 );
+
+}
+#head , #body {
+	position: relative;
+	width: 100%;
+}
+#head {
+	height: 87%;
+}
+#body {
+	height: 13%;
+}
+.head-title {
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	margin: auto;
+	transform: translate(0px,20px);
+}
+.head-title > h1 {
+	margin: 0;
+	color: white;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	font-family: 'Dosis', sans-serif;
+	font-size: 50px;
+}
+.desc-text {
+	position: absolute;
+	width: 100%;
+	height: fit-content;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	text-transform: capitalize;
+	font-size: 155%;
+	font-family:'Alegreya', serif;
+	text-align: center;
+	color: white;
+	top: 67%;
+}
+.logo-holder {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	width: -moz-fit-content;
+	height: -moz-fit-content;
+	width: -webkit-fit-content;
+	height: -webkit-fit-content;
+	top: 39%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.logo {
+	position: relative;
+	width: 182px;
+	height: 172px;
+}
+.already-btn {
+	position: relative;
+	height: 50px;
+	width: 9em;
+	outline: none;;
+	background-color: transparent;
+	border: 3px solid white;
+	border-radius: 50px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	transition: color , background-color  0.5s;
+}
+.already-btn:hover{
+	background-color: white;
+	color:#283747 ;
+	transition: 0.5s
+}
+.sgp-holder {
+	position: relative;
+	height: 100%;
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+	width: 69%;
+}
+
+.singup-title {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	width: -moz-fit-content;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	width: -webkit-fit-content;
+	margin: auto;
+	color: #283747;
+	font-family: 'Alegreya', serif;
+	font-size: 50px;
+}
+.form-holder {
+	position: relative;
+	width: 100%;
+	height: 85.9%;
+}
+.entrys-holder {
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	height: 80%;
+	margin: auto;
+}
+.btn-holder {
+	position: relative;
+	width: 80%;
+	height: 20%;
+	margin: auto;
+	bottom: 0px;
+}
+.sng-btn {
+	position: relative;
+	width: 50%;
+	height: 60%;
+	top: 50%;
+	left:  50%;
+	transform: translate(-50%,-50%);
+	border: 3px solid #283747;
+	background-color: transparent;
+	border-radius: 50px;
+	outline: none;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #283747;
+	cursor: pointer;
+	transition: border-color , background-color,width 0.5s;
+}
+.sng-btn:hover {
+	border-color: #485d74;
+	background-color: #485d74;
+	color: white;
+	width: 70%;
+	transition: 0.5s ;
+}
+.entry-holder {
+	position: relative;
+	width: fit-content;
+	width:-moz-fit-content;
+	width: -webkit-fit-content;
+	height: 33.3333333333%;
+	margin: auto;
+	top: 5%;
+}
+.entry-holder > h4 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.login-input {
+	font-size: 17px;
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	height: 23px;
+	border: none;
+	padding: 9.5px 37px;
+	border-bottom: 3px solid #283747;
+}
+.login-input:focus{
+	outline: none;
+}
+.entry-holder > h4 {
+	margin: 0;
+	font-size: 150%;
+	font-family: 'Lato', sans-serif;
+	color: #283747;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+}
+.entry-holder i {
+	background-color: white;
+    min-width: 50px;
+    text-align: center;
+    font-size: 140%;
+    border-bottom: 3px solid #283747;
+    color: #283747;
+    padding: 10px;
+    float: left;
+}
+@media (max-width: 996px){
+	.sgp-holder {
+		position: absolute;
+		height: 100%;
+		display: inline-block;
+		width: 64%;
+	}
+	
+	
+}
+@media (max-width:790px) {
+	.holder {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		min-width: auto;
+		top: auto;
+		left: auto;
+		transform: none;
+		align-content: flex-start;
+	}
+	.desc {
+		display: flex;
+		height: min-content;
+		height: -webkit-min-content;
+		height: -moz-min-content;
+		width: 100%;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		border-bottom-right-radius: 50px;
+		border-bottom-left-radius: 50px;
+	}
+	.sgp-holder {
+		position: relative;
+		display: flex;
+		margin-top: auto;
+		flex-flow:row wrap;
+		justify-content: center;
+		width: 100%;
+		height: 91%;
+		overflow: hidden;
+		
+	}
+	#head{
+		height: auto;
+		width: 100%;
+	}
+	#body{
+		display: none;
+	}
+	.head-title {
+		margin: auto;
+		transform: none;
+	}
+	.logo-holder {
+		display:none
+	}
+	.desc-text {
+		display: none;
+	}
+	.form-holder {
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-evenly;
+		align-content: -moz-space-evenly;
+		align-content: -webkit-space-evenly;
+	}
+	.entrys-holder {
+		
+		height: 65%;
+		min-height: 260px;
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.btn-holder {
+		height: 11%;
+		margin: 0 auto;
+		width: 100%;
+		min-height: 10%;
+	}
+	.entry-holder i {
+		display: none;
+	}
+	.login-input {
+		border: .4rem solid #283747;
+		border-radius: 50px;
+		font-family: 'Alegreya Sans', sans-serif;
+		font-size: 1.29em;
+		color: #283747;
+	}
+	.entry-holder > h4 {
+		font-family: 'Alegreya Sans', sans-serif;
+		font-size: 1.6em;
+	}
+	#singup-ttl-h {
+		display: none;
+	}
+	.sng-btn {
+		font-family: 'Alegreya Sans', sans-serif;
+		font-size: 1.25em;
+		width:2.5em;
+		min-width: 40%;
+		min-height: 43%;
+		border: 4px solid #283747;
+		height: 2.4em;
+	}
+	.sng-btn:hover{
+		width: 60%;
+	}
+
+}

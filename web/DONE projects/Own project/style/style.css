@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&display=swap');
+
+body {
+	margin: 0;
+  	background-color: #283747;
+  	font-family:'Dosis', sans-serif;
+}
+.logo-holder {
+	position: relative;
+	width: 100%;
+	width: 100%;
+	height: fit-content;
+	height: -moz-fit-content;
+	margin: auto;
+	color: white;
+	animation: for-logo-holder 1s  2.6s forwards;
+}
+@keyframes for-logo-holder{
+	to{background-color: white;color: #283747;}
+}
+.head {
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	height: fit-content;
+	height: -moz-fit-content;
+	margin: auto;
+}
+
+.head > h1 {
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	font-size: 350%;
+	animation: forh4 .5s forwards ease-in-out;
+}
+@keyframes forh4 {
+	0%{opacity: 0;}
+	100%{opacity: 1}
+}
+
+.name-holder {
+	margin: 0;
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	height: fit-content;
+	height: -moz-fit-content;
+	margin: auto;
+}
+.name-holder > h2 {
+	margin: 0;
+	font-size: 190%;
+	opacity: 0;
+	text-transform: uppercase;
+	animation: forh2 1.5s .9s ease-in-out forwards;
+	font-family: 'Dosis', sans-serif;
+}
+@keyframes forh2 {
+	0%{opacity: 0;letter-spacing: 9px}
+	50%{opacity: 1;letter-spacing: 9px}
+	100%{opacity: 1;letter-spacing: 3px}
+}
+.body-holder{
+	position:absolute;
+	width: 100%;
+	height: 85.6%;
+	background-color: #3f5266;
+	opacity: 0;
+	animation: for-game-links-holder 1s 3.4s forwards;
+} 
+@keyframes for-game-links-holder {
+	to{opacity: 1;}
+}
+.body {
+	position: relative;
+	width: 100%;
+	height: 90%;
+}
+.footer {
+	position: relative;
+	width: 100%;
+	height: 10.5%;
+	background-color: white;
+}
+.text-holder{
+	position: absolute;
+	width: 50%;
+	height: -moz-fit-content;
+	height: fit-content;
+	height: -webkit-fit-content;
+	top: 50%;
+	transform: translate(2%,-50%);
+}
+.main-text-holder {
+	position: relative;
+	width: 100%;
+	/* width: -moz-fit-content;
+	width: -webkit-fit-content; */
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	height: fit-content;
+	margin: auto;
+	display: inline-block;
+	border-left: 3px solid white;
+	padding: 2%;
+}
+.main-text-holder > p {
+	position: relative;
+	margin: 0;
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 190%;
+	color: white;
+	/* top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); */
+	overflow: hidden;
+}
+.image-holder {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	float: right;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.image-holder > img {
+	position: relative;
+	width: 132%;
+	left: 50%;
+	top: 53%;
+	transform: translate(-50%,-50%);
+}
+.text-holder >h2 {
+	position: relative;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	color: white;
+	margin: 0 0 0 2%;
+	margin-bottom: 3mm;
+	text-transform: capitalize;
+	font-size: 3.5em;
+}
+.button-holder > a {
+	position: relative;
+	display: block;
+	width: 50%;
+	padding: 1% 0;
+	margin: 20px auto 0;
+	color: white;
+	border: 3px solid white;
+	text-decoration: none;
+	font-size: 25px;
+	text-transform: capitalize;
+	text-align: center;
+	border-radius: 40px;
+	letter-spacing: 2px;
+	background-color: transparent;
+	transition: background-color  .5s ease,letter-spacing .5s ease;
+}
+.button-holder > a:hover {
+	background-color: #ffffff;
+	color: #283747;
+	letter-spacing: 5px;
+}
+.footer > div {
+	position: relative;
+	display: block;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin:auto;
+	font-family:normal ;
+	top: 40%;
+	color: #757575;
+	opacity: .6;
+}
+.footer>div>h3 {
+	margin: 0;
+}	
+@media only screen and (max-width: 787px) {
+	body{
+		overflow: hidden;
+	}
+	.text-holder > h2 {
+		font-size: 4em;
+	}
+	.button-holder {
+		width: 100%;
+	}
+	.button-holder > a {
+		width: 70%;
+	}
+	.text-holder{
+		position: relative;
+		width: 100%;
+		top: auto;
+		transform: none;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.text-holder > h2 {
+		margin: auto;
+		margin-bottom: 13px;
+	}
+	.main-text-holder{
+		width: 100%;
+		padding: 0 1%;
+		border-right: 5px solid white;
+		border-left: 5px solid white;
+	}
+	.image-holder {
+		display: block;
+		width: 100%;
+		height: 50%;
+		float: none;
+	}
+	.main-text-holder > p {
+		font-size: 2em;
+		text-align: center;
+		font-family: 'Alegreya Sans', sans-serif;
+	}
+	.button-holder > a {
+		margin: 34px auto 0 ;
+		padding: .5% 0 ;
+		font-family: 'Alegreya Sans', sans-serif;
+		
+	}
+	.image-holder > img {
+		height: 127%;
+		width: 110%;
+		transform: translate(-50%,-60%);
+	}
+	.footer {
+		display: none;
+	}
+	.body{
+		display: flex;
+		flex-flow: row wrap;
+		height: 100%;
+	}
+	.body-holder {
+		height: 100%;
+	}
+  }
+
+
+

@@ -1,0 +1,174 @@
+/* this for normal texts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* this for headers */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 , h2 , h3 , h4 {
+    font-family: 'Bebas Neue', cursive;
+}
+/* back symbole */
+    /* strat */
+    #back-s-holder {
+        position: absolute;
+        width: fit-content;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        margin: 1em .5em;
+        display: flex;
+        flex-flow: column;
+        cursor: pointer;
+        z-index: 99;
+    }
+    #back-1 , #back-2 , #back-3 {
+        display: block;
+        margin: 1px;
+        width: 50px;
+        height: 7px;
+        background-color: rgb(255, 255, 255);
+        border-radius:50px ;
+        transform: translate(1.3px);
+    }
+    #back-1 , #back-3 {
+        width: 25px;
+    } 
+    #back-1 {
+        transform: rotate(-45deg);
+    }
+    #back-3 {
+        transform: rotate(45deg);
+    }
+        /* end */
+/* title holder */
+.title-holder {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-content: flex-end;
+    background-color: var(--main-color);
+    margin-bottom: 74px;
+    min-height: 107.25px;
+}
+/* h1 holder */
+.h1-holder {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    height: 4.5em;
+    box-sizing: content-box;
+    padding: 0 1em;
+    width: fit-content;
+    width: -moz-fit-content;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    background-color: rgb(242, 246, 246);
+    transform: translate(0,50%);
+    border-radius: 5px;
+    color: var(--main-color);
+    font-size: 1.35em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    align-content: center;
+}
+.h1-holder>h2 {
+    margin: 0;
+}
+/* card box holder */
+.card_box_holder {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+/* card box */
+.card_box{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    max-width: 500px;
+    min-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+/* card box title */
+.card_box_title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    letter-spacing: 2px;
+    color: white;
+}
+/* chef title */
+.chef_title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    letter-spacing: .09em;
+}
+/* chef image */
+.chef_img {
+    max-width: 160px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: .4em;
+}
+/* chef name */
+.chef_name {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: .09em;
+    margin: 0;
+    margin-top: .5em ;
+}
+/* link to members */
+.link_to_members {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2em;
+    border: 2px solid white;
+    padding: .7em 2em;
+    text-transform: capitalize;
+    transition: background-color .3s ease-out;
+}
+.link_to_members:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+/* responsive web design */
+    /* very small screens */
+@media (max-width:360px) {
+    .card_box {
+        min-width: 330px;
+    }
+    .h1-holder {
+        max-width: 288px;
+    }
+}
+/* above 1280px */
+@media (min-width:1280px) {
+    .card_box {
+        min-width: 483px;
+    }
+}

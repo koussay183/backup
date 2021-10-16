@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+.preloader {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #f1e5ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader .a {
+  height: 200px;
+  width: 200px;
+  background: #171e2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-transition: width 1.5s ease-in-out , height 1.5s ease-in;
+  transition: width 1.5s ease-in-out , height 1.5s ease-in;
+  -webkit-animation: spin-a .5s ease-in-out infinite;
+          animation: spin-a .5s ease-in-out infinite;
+}
+
+.preloader .a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 70%;
+  background: white;
+  border-radius: 50%;
+  -webkit-transition: width 2s ease-in-out , height 1.5s ease-in;
+  transition: width 2s ease-in-out , height 1.5s ease-in;
+  -webkit-animation: spin-a 1s ease-in-out infinite;
+          animation: spin-a 1s ease-in-out infinite;
+}
+
+.preloader .a span div {
+  width: 50%;
+  height: 50%;
+  background: grey;
+  border-radius: 50%;
+  -webkit-transition: width 2s ease-in-out , height 1.5s ease-in;
+  transition: width 2s ease-in-out , height 1.5s ease-in;
+  -webkit-animation: spin-a 1s ease-in-out infinite;
+          animation: spin-a 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin-a {
+  0% {
+  }
+  50% {
+    height: 250px;
+    width: 250px;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@keyframes spin-a {
+  0% {
+  }
+  50% {
+    height: 250px;
+    width: 250px;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@-webkit-keyframes spin-b {
+  0% {
+  }
+  50% {
+    width: 95%;
+    height: 95%;
+  }
+  100% {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@keyframes spin-b {
+  0% {
+  }
+  50% {
+    width: 95%;
+    height: 95%;
+  }
+  100% {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@-webkit-keyframes spin-c {
+  0% {
+  }
+  50% {
+    width: 95%;
+    height: 95%;
+  }
+  100% {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@keyframes spin-c {
+  0% {
+  }
+  50% {
+    width: 95%;
+    height: 95%;
+  }
+  100% {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.nav-box-bar-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 2em;
+}
+
+.nav-box-bar-holder input {
+  outline: none;
+  width: 80%;
+  max-width: 600px;
+  height: 40px;
+  border: 2px solid #171e2a;
+  border-radius: 50px;
+  font-size: 1.1em;
+  color: #171e2a;
+  padding-left: 1em;
+  background: rgba(128, 128, 128, 0.144);
+}
+
+.nav-box-bar-holder button {
+  outline: none;
+  background: transparent;
+  border: unset;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.nav-box-bar-holder button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav-box-bar-holder .material-icons {
+  color: #171e2a;
+  font-size: 3em;
+  margin: 0 .2em;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #171e2a;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #171e2a;
+  opacity: .6;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #171e2a;
+  opacity: .6;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #171e2a;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: capitalize;
+}
+
+h1 h2 h3 {
+  font-weight: bolder;
+}
+
+.holder {
+  position: absolute;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.holder nav {
+  position: relative;
+  width: 100%;
+  padding: .5rem 1rem;
+}
+
+.holder nav h1 {
+  color: #171e2a;
+  font-size: 2.5rem;
+  text-transform: none;
+}
+
+.holder nav h1 span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #171e2a;
+  border-radius: 50%;
+  background: #f1e5ce;
+  margin: 0 .4rem;
+}
+
+.holder main {
+  position: relative;
+  padding-top: 1em;
+}
+
+.holder main .rs-holder {
+  position: absolute;
+  width: 85%;
+  max-width: 600px;
+  margin: 3em auto;
+  min-height: 100%;
+}
+
+.rs-holder > ul {
+  list-style: none;
+}
+
+.rs-holder > ul li {
+  padding: .7em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rs-holder > ul li span {
+  font-size: 1.5em;
+}
+
+.rs-holder > ul li button {
+  min-width: 80px;
+  max-width: 100px;
+  height: 34px;
+  margin-left: .3em;
+  outline: none;
+  background: #f1e5ce;
+  border: none;
+  border-radius: 50px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.more {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.more button {
+  min-width: 80px;
+  max-width: 100px;
+  height: 34px;
+  margin-left: .3em;
+  outline: none;
+  background: #f1e5ce;
+  border: none;
+  border-radius: 50px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.before-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
